@@ -3,9 +3,11 @@ Isto serve também para sua aplicação. A incerteza implementada, é inspirada 
 O uso dela trará segurança à seu código, para que se houver algum problema, ele possa te relatar o erro por um callback bem feito,
 ao invez de gerar uma Exeption e explodir o seu código.
 
-Se interessou pela proposta do Rust? Temos também uma SDK para o Rust. 
 
 <div align="center">
+
+Se interessou pela proposta do Rust? Temos também uma SDK para o Rust. 
+
 <a href="https://bflex.tech" target="_blank"><img height="37px" src="https://img.shields.io/badge/Me%20interessei-843057"></a>
 <br>
 <br>
