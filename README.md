@@ -1,1 +1,1 @@
-# bfinancial-js
+# bfinancial-ts
