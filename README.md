@@ -2,6 +2,7 @@ Para a segurança do seu sistema, usamos sistemas de incerteza. O código comple
 
 <h3><details>
 <summary align="left">Mais sobre a incerteza</summary>
+</h3>
 
 ## Como Funciona
 O sistema de incertezas que implementamos tem como base a ideia de que, em vez de lançar exceções quando ocorrem erros, ele fornece uma estrutura para que esses erros sejam tratados de forma controlada e previsível. Essa estrutura permite que você defina callbacks específicos para tratar diferentes tipos de erros, garantindo que o fluxo do programa não seja interrompido abruptamente.
@@ -24,7 +25,6 @@ A implementação de um sistema de incertezas é particularmente vantajosa em um
 A implementação dessa abordagem traz uma camada adicional de segurança e flexibilidade ao seu sistema de pagamentos, ajudando a garantir que ele seja mais confiável e mais fácil de manter ao longo do tempo.
 
 </details>
-</h3>
 
 <div align="center">
 
