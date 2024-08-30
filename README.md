@@ -1,1 +1,1 @@
-# bfinancial-rb
+# bfinancial-js
