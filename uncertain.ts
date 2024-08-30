@@ -1,3 +1,7 @@
+/**
+ * By. Lucas Silveira <contato.lucasdwbfff@gmail.com>
+ */
+
 class Result<T, E> {
   state: boolean | null = null;
   val: T | E | null = null;

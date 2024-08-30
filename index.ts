@@ -1,3 +1,7 @@
+/**
+ * By. Lucas Silveira <contato.lucasdwbfff@gmail.com>
+ */
+
 import { Result } from "./uncertain";
 import type { PixCreate, CardCreate, CardPayment, PixPayment } from "./common";
 

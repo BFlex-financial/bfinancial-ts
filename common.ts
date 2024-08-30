@@ -1,3 +1,7 @@
+/**
+ * By. Lucas Silveira <contato.lucasdwbfff@gmail.com>
+ */
+
 export type CardCreate = {
   amount: number,
   number: string,

@@ -1,3 +1,7 @@
+/**
+ * By. Lucas Silveira <contato.lucasdwbfff@gmail.com>
+ */
+
 import { Client, Presset } from  "../";
 import type { Pix } from "../";
 import type { PixPayment } from "../common";
