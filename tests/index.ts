@@ -1,13 +1,8 @@
-Para a segurança do seu sistema, usamos sistemas de incertezas. Está disponível em `./bfinancial/uncertain.ts` todo o código da incerteza.
-Isto serve também para sua aplicação. A incerteza implementada, é inspirada na `impl` Result do Rust.
-O uso dela trará segurança à seu código, para que se houver algum problema, ele possa te relatar o erro por um callback bem feito,
-ao invez de gerar uma Exeption e explodir o seu código.
+import { Client, Presset } from  "../";
+import type { Pix } from "../";
+import type { PixPayment } from "../common";
+import { match } from "../uncertain";
 
-Se interessou pela proposta do Rust? Temos também uma SDK para o Rust. 
-<a href="https://bflex.tech" target="_blank"><img height="30px" src="https://img.shields.io/badge/Me%20interessei-843057"></a>
-
-# Gerando um pix com a SDK
-```ts
 const client = new Client().login("admin");
 const payment = client.payments;
 
@@ -40,4 +35,3 @@ match<PixPayment, string>(Presset.pix(info), {
     })
   }
 })
-```
