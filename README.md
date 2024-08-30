@@ -1,7 +1,7 @@
 Para a segurança do seu sistema, usamos sistemas de incerteza. O código completo da incerteza está disponível em ./bfinancial/uncertain.ts. Isso também se aplica à sua aplicação. A incerteza implementada é inspirada na Result do Rust. O uso dessa abordagem trará mais segurança ao seu código, permitindo que, se houver algum problema, ele possa relatar o erro por meio de um callback bem implementado, em vez de gerar uma exceção e causar a falha do seu código.
 
 <div><details>
-<summary align="left">Mais sobre a incerteza</summary>
+<summary align="left"><h4>Mais sobre a incerteza</h4></summary>
 
 ## Como Funciona
 O sistema de incertezas que implementamos tem como base a ideia de que, em vez de lançar exceções quando ocorrem erros, ele fornece uma estrutura para que esses erros sejam tratados de forma controlada e previsível. Essa estrutura permite que você defina callbacks específicos para tratar diferentes tipos de erros, garantindo que o fluxo do programa não seja interrompido abruptamente.
