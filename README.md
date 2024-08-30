@@ -8,7 +8,7 @@ ao invez de gerar uma Exeption e explodir o seu código.
 
 Se interessou pela proposta do Rust? Temos também uma SDK para o Rust. 
 
-<a href="https://bflex.tech" target="_blank"><img height="37px" src="https://img.shields.io/badge/Me%20interessei-843057"></a>
+<a href="https://github.com/BFlex-financial/bfinancial-rs" target="_blank"><img height="37px" src="https://img.shields.io/badge/Me%20interessei-843057"></a>
 <br>
 <br>
 </div>
