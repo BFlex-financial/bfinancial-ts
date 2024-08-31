@@ -39,7 +39,10 @@ Se interessou pela proposta do Rust? Temos também uma SDK para o Rust.
 <br>
 </div>
 
-# Gerando um pix com a SDK
+> [!NOTE]\
+> Logicamente, o que funciona em um contexto ou dispositivo deve funcionar em outro similar. No entanto, recomendamos seguir as instruções e especificações descritas para garantir o desempenho e a compatibilidade adequados. Seguir as orientações específicas ajuda a evitar problemas e a assegurar que tudo funcione conforme esperado.
+
+# Gerando um pix com a SDK - TypeScript
 ```ts
 const client = new Client().login("admin");
 const payment = client.payments;
@@ -73,4 +76,52 @@ match<PixPayment, string>(Presset.pix(info), {
     })
   }
 })
+```
+
+# Gerando um pix com a SDK - JavaScript
+```js
+const client = new Client().login("admin");
+const payment = client.payments;
+
+const info = {
+  amount: 2,
+  payer_email: "test@gmail.com"
+};
+
+/*
+  Tenta gerar os dados para criar o pagamento pix.
+  Caso dê algum problema, ele cairá no fail.
+  Caso não, cairá no sucess. 
+*/
+match(payment.create(new Transaction(info).pix()), {
+  fail(_) { console.log(_); },
+
+  async success(data) {
+    const pix = await data;
+    console.log(pix);
+  }
+})
+```
+<div align="center">
+
+### Evitando usar o match
+</div>
+
+```js
+const client = new Client().login("admin");
+const payment = client.payments;
+
+const info = {
+  amount: 2,
+  payer_email: "test@gmail.com"
+};
+
+/*
+  Tenta gerar os dados para criar o pagamento pix.
+  Caso dê algum problema, ele cairá no fail.
+  Caso não, cairá no sucess. 
+*/
+const data = payment.create(new Transaction(info).pix()).unwrap();
+const pix = await data;
+console.log(pix);
 ```

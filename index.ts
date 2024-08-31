@@ -81,6 +81,38 @@ class Payment {
   }
 }
 
+class Transaction {
+  private info: PixCreate | CardCreate;
+  constructor(info: PixCreate | CardCreate) {
+    this.info = info;
+  }
+  public pix(): PixPayment {
+    const data: PixCreate = this.info as PixCreate;
+    return { 
+      method: "Pix",
+      amount: data.amount,
+      payer_email: data.payer_email
+    }
+  }
+  public card(): CardPayment {
+    const data: CardCreate = this.info as CardCreate;
+    return { 
+      method: "Card",
+
+      amount: data.amount,
+      cvv: data.cvv,
+      number: data.number,
+      
+      payer_cpf: data.payer_cpf,
+      payer_email: data.payer_email,
+      payer_name: data.payer_name,
+      
+      expiration_month: data.expiration_month,
+      expiration_year: data.expiration_year,
+    }
+  }
+}
+
 export type Pix = {
   payment_id: string,
   qr_code: {
@@ -95,4 +127,4 @@ export type Card = {
   increase: number,
 };
 
-export { Client, Presset };
+export { Client, Presset, Transaction };
