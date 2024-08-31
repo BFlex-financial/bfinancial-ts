@@ -40,7 +40,7 @@ Se interessou pela proposta do Rust? Temos também uma SDK para o Rust.
 </div>
 
 > [!NOTE]\
-> Logicamente, o que funciona em um contexto ou dispositivo deve funcionar em outro similar. No entanto, recomendamos seguir as instruções e especificações descritas para garantir o desempenho e a compatibilidade adequados. Seguir as orientações específicas ajuda a evitar problemas e a assegurar que tudo funcione conforme esperado.
+> Logicamente, o que funciona em TypeScript deve funcionar em JavaScript. No entanto, recomendamos seguir as instruções e especificações descritas para garantir a segurança adequada do seu sistema (Lidar com Exeptions nunca é a melhor solução em JavaScript). Seguir as orientações específicas ajuda a evitar problemas e a assegurar que tudo funcione conforme esperado.
 
 # Gerando um pix com a SDK - TypeScript
 ```ts
