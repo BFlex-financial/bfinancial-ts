@@ -89,9 +89,9 @@ const info = {
 };
 
 /*
-  Tenta gerar os dados para criar o pagamento pix.
-  Caso dê algum problema, ele cairá no fail.
-  Caso não, cairá no sucess. 
+  Tenta gerar os dados de pagamento do pix, como
+  QRCode, Copia e cola e mais alguns dados que são necessários
+  para o nosso funcionamento.
 */
 match(payment.create(new Transaction(info).pix()), {
   fail(_) { console.log(_); },
@@ -117,9 +117,9 @@ const info = {
 };
 
 /*
-  Tenta gerar os dados para criar o pagamento pix.
-  Caso dê algum problema, ele cairá no fail.
-  Caso não, cairá no sucess. 
+  Gera o pagamento pix, e envia para o data o conteúdo
+  necessário para que seja possível o cliente efetuar o 
+  pagamento.
 */
 const data = payment.create(new Transaction(info).pix()).unwrap();
 const pix = await data;
