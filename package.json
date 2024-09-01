@@ -1,5 +1,6 @@
 {
-  "name": "bfinancial-js",
+  "name": "bfinancial-ts",
+  "version": "0.0.1",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -7,5 +8,9 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/BFlex-financial",
+    "type": "organization"
   }
 }

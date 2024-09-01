@@ -1,3 +1,10 @@
+> [!WARNING]
+> Se você está trabalhando com JavaScript, é recomendável que use a [lib do Node.js](https://github.com/BFlex-financial/bfinancial-nodejs). Ou, transpile usando:
+> `npx tsc common.ts index.ts uncertain.ts`
+> 
+> **Lembre-se de que se você usa Node.js, ele interpreta apenas código JavaScript, e pede a transpilação do Typescript.**
+> **Oque quer dizer:** Se você pretende usar o Node.js, use a [lib específica](https://github.com/BFlex-financial/bfinancial-nodejs) para evitar problemas.
+
 Para a segurança do seu sistema, usamos sistemas de incerteza. O código completo da incerteza está disponível em ./bfinancial/uncertain.ts. Isso também se aplica à sua aplicação. A incerteza implementada é inspirada na Result do Rust. O uso dessa abordagem trará mais segurança ao seu código, permitindo que, se houver algum problema, ele possa relatar o erro por meio de um callback bem implementado, em vez de gerar uma exceção e causar a falha do seu código.
 
 <div><details>
@@ -77,6 +84,9 @@ match<PixPayment, string>(Presset.pix(info), {
   }
 })
 ```
+
+> [!WARNING]
+> Se você está trabalhando com JavaScript, é recomendável que use a [LIB do Node.js](https://github.com/BFlex-financial/bfinancial-nodejs). Ela não contem recursos como as incertezas, mas por isto, é simplificada, já que não temos tipagens para lidarmos com incertezas.
 
 # Gerando um pix com a SDK - JavaScript
 ```js
