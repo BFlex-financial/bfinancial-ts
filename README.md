@@ -5,6 +5,12 @@
 > **Lembre-se de que se você usa Node.js, ele interpreta apenas código JavaScript, e pede a transpilação do Typescript.**
 > **Oque quer dizer:** Se você pretende usar o Node.js, use a [lib específica](https://github.com/BFlex-financial/bfinancial-nodejs) para evitar problemas.
 
+<br>
+<br>
+
+#
+<br>
+
 Para a segurança do seu sistema, usamos sistemas de incerteza. O código completo da incerteza está disponível em ./bfinancial/uncertain.ts. Isso também se aplica à sua aplicação. A incerteza implementada é inspirada na Result do Rust. O uso dessa abordagem trará mais segurança ao seu código, permitindo que, se houver algum problema, ele possa relatar o erro por meio de um callback bem implementado, em vez de gerar uma exceção e causar a falha do seu código.
 
 <div><details>
